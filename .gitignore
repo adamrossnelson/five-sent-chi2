@@ -1,1 +1,137 @@
+# ========================================================
+# This file's provenance is from the following prompt on
+# Claude Opus 5.5 Medium Effort:
+# I need you to write the contents of a simple base .gitignore file for me. I will copy and paste what you provide to the .gitignore here in the chat. My project is a Quarto website and I’m using either or both Python and R in my work. Please generate a sensible .gitignore for a project of this type for me. Be sure to exclude system and artifact files for both MacOS and Windows. Have it ignore files that are remnants or artifacts of Python, R, Quarto, IDEs, Jupyter Lab, Jupyter Notebooks, and related.
+# =========================================================
+# Quarto
+# =========================================================
+/.quarto/
+**/*.quarto_ipynb
+# Rendered website output (remove this line if you commit
+# rendered output, e.g. publishing from docs/ or _site/)
+/_site/
+# Intermediate render files and caches
+*_cache/
+.jupyter_cache/
+# NOTE: _freeze/ is intentionally NOT ignored. Quarto
+# recommends committing it so computations don't re-run.
+
+# =========================================================
+# R / RStudio
+# =========================================================
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.Rproj.user/
+*.Rproj.user
+.Renviron
+*.utf8.md
+*.knit.md
+rsconnect/
+# renv (renv/.gitignore handles most of this, but just in case)
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+# Virtual environments and secrets
+.venv/
+venv/
+env/
+ENV/
+.env
+.python-version
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =========================================================
+# Jupyter Lab / Notebooks
+# =========================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.virtual_documents/
+.jupyter/
+profile_default/
+ipython_config.py
+
+# =========================================================
+# IDEs and editors
+# =========================================================
+# VS Code / Positron
+.vscode/
+.positron/
+*.code-workspace
+.history/
+# JetBrains (PyCharm, etc.)
+.idea/
+# Spyder
+.spyderproject
+.spyproject
+# Vim / Emacs / misc temp files
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# =========================================================
+# macOS
+# =========================================================
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# =========================================================
+# Windows
+# =========================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
