@@ -19,7 +19,7 @@ bibliography: references.bib
 engine: jupyter
 ---
 
-# Introduction
+# Introduction + Background
 
 Many scientists for decades have pondered if it might be possible to create an app that would snap a photo of a book and then tell the app's user information about that book including, for example, its genre which is the question we present and study in this paper.
 
