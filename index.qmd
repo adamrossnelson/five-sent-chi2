@@ -27,7 +27,7 @@ Many scientists for decades have pondered if it might be possible to create an a
 
 Others have previously studied how machine learning algorithims may predict information about a book including a book's genre [@vayadande2024book].
 
-# Method
+# Method + Data
 
 ```{python}
 import pandas as pd
